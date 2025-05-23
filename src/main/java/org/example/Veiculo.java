@@ -1,6 +1,10 @@
 package org.example;
 
+<<<<<<< HEAD
 public abstract class Veiculo {
+=======
+public class Veiculo {
+>>>>>>> bccbaaf1600313da78ee25e57020288ffe2a7c54
     private String placa;
     private String marca;
     private String modelo;
@@ -68,6 +72,7 @@ public abstract class Veiculo {
         return this.motor;
     }
 
+<<<<<<< HEAD
     public final void setPlaca(String placa){
         this.placa = placa;
     }
@@ -114,4 +119,49 @@ public String toString() {
 
 public abstract Object[] toArray();
 
+=======
+    public void setPlaca(String placa){
+        this.placa = placa;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+
+    public void setCor(String cor){
+        this.cor = cor;
+    }
+
+    public void setVelocMax(float velocMax){
+        this.velocMax = velocMax;
+    }
+
+    public void setQtdRodas(int qtdRodas){
+        this.qtdRodas = qtdRodas;
+    }
+
+    public void setMotor(Motor motor){
+        this.motor = motor;
+    }
+
+    @Override
+    public String toString(){
+
+        System.out.println("A placa do veículo é: " + this.placa);
+        System.out.println("A marca do veículo é: " + this.marca);
+        System.out.println("O modelo do veículo é: " + this.modelo);
+        System.out.println("A cor do veículo é: " + this.cor);
+        System.out.println("A velocidade máxima do veículo é: " + this.velocMax);
+        System.out.println("A quantidade de rodas do veículo é: " + this.qtdRodas);
+        System.out.println("A quantidade de pistões do Motor é: " + this.motor.getQtdPist());
+        System.out.println("A potêcia do motor é: " + this.motor.getPotencia());
+
+        System.out.println("************************************************************");
+        return null;
+    }
+>>>>>>> bccbaaf1600313da78ee25e57020288ffe2a7c54
 }
